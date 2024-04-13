@@ -23,7 +23,7 @@ The website in its original state lacked engaging content and visual appeal. It 
 
 ### Links
 
-- Live website: [Insert link here]
+- Live website: [https://mericadev.github.io/Sitters-SA/]
 
 - Repository: [https://github.com/mericadev/Sitters-SA.git]
 
