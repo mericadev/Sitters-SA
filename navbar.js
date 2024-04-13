@@ -54,6 +54,8 @@ headerTemplate.innerHTML = `
             justify-content: space-around;
             border-radius: 10px;
             min-height: 10vh;
+            max-width: 1200px;
+            margin: 0 auto;
             margin-bottom: 4rem;
             background-color: var( --background-azure);
             animation: stickyNav linear forwards;
@@ -135,7 +137,7 @@ headerTemplate.innerHTML = `
         <navbar>
         <nav class="nav-bar flex-group">
             <div class="logo">
-                Sitters SA
+            <a href="index.html"><img src="images/sitters-sa-logo.svg" width="40px" height="40px"></a>
             </div>
 
             <div class="side-bar">

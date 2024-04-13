@@ -4,11 +4,13 @@ footerTemplate.innerHTML = `
  <style>
  footer {
     min-height: 20vh;
-    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #E4F9FF;
     ul {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 2rem;
         align-items: center;
         li {
@@ -36,6 +38,9 @@ footerTemplate.innerHTML = `
         font-size: 1.2em;
         font-weight: 500;
         line-height: 1.2em;
+        }
+        .logo, .copy-right{
+          padding: 2rem;
         }
   }
  </style>
