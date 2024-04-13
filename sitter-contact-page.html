@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitters SA | Pet Owners Contact Page</title>
+    
+    <!-- css links-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <!-- font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!-- components links-->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</head>
+<body>
+  <header-component></header-component>
+    
+    <main>
+        <div class="page-title">
+            <h1>Become Part Of Our Team</h1>
+        </div>
+      <h2>Complete the Form below to become part of our Home and Pet Sitter Database</h2>
+       
+      <div class="sitter-form">
+        <div class="title">
+            Sitter Contact Information
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" id="sitter-form">
+            <input type="hidden" name="access_key" value="f36b5174-8307-4545-844a-39d678b29795">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required autocomplete="given-name">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Surname</span>
+                    <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">ID/Passport Number</span>
+                    <input type="text" id="idOrPassport" name="idOrPassport" placeholder="Enter id/passport" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Date of Birth</span>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Date" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Gender</span><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="prefer-not-to-say" name="gender" value="Prefer not to say">
+                    <label for="male">Prefer not to say</label><br>
+
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Cellphone number(without spaces)</span>
+                    <input type="number" id="phone-number" name="phone-number" placeholder="Cellphone" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Surburb</span>
+                    <input type="text" id="surburb" name="surburb" placeholder="Surburb" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Town/City</span>
+                    <input type="text" id="town-city" name="town-city" placeholder="Town/City" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Province</span>
+                    <input type="text" id="province" name="province" placeholder="Province" required>
+                </div>
+            </div>
+
+            <div class="user-services">
+                <div class="input-box">
+                    <span class="services-rendered">Services you can Render(Tick as required)</span><br>
+
+                    <input type="checkbox" id="house-sitting-sleeping" name="house-sitting-sleeping" value="house-sitting-sleeping">
+                    <label for="house-sitting-sleeping">House Sitting(Sleep In)
+                    </label><br>
+
+                    <input type="checkbox" id="pet-sitting-sleeping" name="pet-sitting-sleeeping" value="pet-sitting">
+                    <label for="pet-sitting-sleeping">Pet Sitting(Sleep In)</label><br>
+
+                    <input type="checkbox" id="pet-feeding" name="pet-feeding" value="pet-feeding">
+                    <label for="pet-feeding">Pet Feeding(Twice Daily - Not Sleep In)</label><br>
+
+                    <input type="checkbox" id="garden-sitting" name="garden-sitting" value="garden-sitting">
+                    <label for="garden-sitting">Garden/Pool Sitting(Not Sleep In)</label><br>
+
+                    <input type="checkbox" id="kenneling-service" name="kenneling-service" value="kenneling-service">
+                    <label for="kenneling-service">Kenneling Services</label><br>
+                </div>
+            </div>
+
+            <div class="user-rates">
+                <div class="input-box">
+                    <span class="details">House Sitting(Sleep in)</span>
+                    <input type="text" id="house-sitting-sleeping-rate" name="house-sitting-sleeping-rate" placeholder="Rate">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Pet Sitting (Sleep In)</span>
+                    <input type="text" id="pet-sitting-rate" name="pet-sitting-rate" placeholder="Rate">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Pet Feeding (Twice Daily - Not Sleep In)</span>
+                    <input type="text" id="pet-feeding-rate" name="pet-feeding" placeholder="Rate">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">House Sitting(Not Sleep in)</span>
+                    <input type="text" id="house-sitting-rate" name="house-sitting-rate" placeholder="Rate">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Garden/Pool Sitting (Not Sleep In)</span>
+                    <input type="text" id="pool-garden-rate" name="pool-garden-rate" placeholder="Rate">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Kenneling Services
+                    </span>
+                    <input type="text" id="kenneling-services" name="kenneling-services" placeholder="Rate">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Meet and Greet before Customer Departure
+                    </span>
+                    <input type="text" id="meet-greet" name="meet-greet" placeholder="Rate">
+                </div>
+            </div>
+             <!-- Disclaimer textarea -->
+       
+          <div class="disclaimer">
+            <p>Disclaimer: </p>
+            <br>
+            <textarea id="text" name="text" rows="10" cols="48" readonly>
+When making use of Sitters SA, you agree to comply with and be bound by these Terms of Service (as they may be amended from time to time). If you do not accept any of these Terms of Service, you should not make use of our services.  
+
+If you have any questions about anything in these Terms of Service, please get in touch with us.          
+                
+1. OVERVIEW OF OUR ROLE AND HOW THE SERVICES WORK
+                
+    1.1. When we talk about “Sitters SA”, "we", "our" or "us" in these Terms of Service, we are referring to Phillip Nicholson, sole proprietor of this business.
+                
+    1.2. Pet Parents and Sitters are together referred to as "Members" or individually as "you".
+                
+    1.3. We operate the website at www.sitterssa.co.za ("Platform").
+                
+    1.4. We provide an introduction service and provide the Platform for Members to find and connect with each other. We are not involved directly in discussions between Members or the arrangement or performance of any Sitter and are not a party to any agreements you may make with other Members. 
+                
+    1.5. In consideration of Members paying a fee and complying with the requirements of these Terms of Service, we will provide the following services (“Services”):
+                
+    1.5.1 Hosting and maintaining the Platform to enable Pet Parents and Home Owners to make enquiries for available Sitters; and/or
+                
+    1.5.2 Hosting and maintaining the Platform to enable Sitters to offer to care for a Pet Parent's property and/or pet(s); and
+                
+    1.5.3 our other services as set out in section 3;
+                
+    1.6. We will provide the Services to you for the period specified required to source and confirm bookings
+                
+                
+2. SEPARATE AGREEMENT BETWEEN MEMBERS
+                
+    2.1. When you arrange a Sit via our business, you are entering into an agreement between yourself and a Pet Parent or Sitter (as applicable). 
+                
+    2.2. We are not party to any agreement, contractual or otherwise, between a Pet Parent and a Sitter. We act as a sourcing business to connect Pet Sitters / Home Owners with Sitters in their area
+                
+    2.3. You should use your best judgement when selecting a Sit/Sitter, we provide basic checks and will make ourselves available to collect more information on request. You are solely responsible for making decisions that are in your best interests, including in relation to properties and pet(s) and potential Pet Parent/Sitter.
+                
+                
+3. THE SERVICES WE PROVIDE FOR MEMBERS
+                
+    In addition to the services described in clause 1.5 above, we provide the other services set out in this clause to Pet Parents/Home Owners and Sitters.
+                
+    3.1. The services we provide for Pet Parents/ are:
+                
+        3.1.1. the ability to send us a request to source sitters available in your area;
+                
+        3.1.2. To receive quoted amounts for sitters available from us;
+                
+        3.1.3. the ability to confirm your desire to make use of the sitter for the period agreed on;
+                
+    3.2. The services we provide for Sitters are:
+                
+        3.2.1. the ability to complete an application to be added to our directory as an available sitters in your area;
+                
+        3.2.2. to be informed of any Pet Owner or Home Owner in your area requiring a Sitter;
+                
+        3.2.3. The opportunity to quote an amount for the sitting required;
+                
+                
+4. THE SERVICES WE DO NOT PROVIDE TO MEMBERS
+                
+    4.1. We do not provide the following or any guarantees or assurances for any of the following:
+                
+        4.1.1. the safety of a Pet Parent’s home and/or pet(s);
+                
+        4.1.2. confirmation of arrangements including dates of Sit;
+                
+        4.1.3. whether the Sit will go ahead as arranged;
+                
+        4.1.4. that a Sit or Sitter will guaranteed be available for the times you applied for; 
+                
+        4.1.5. that you will be matched with another Member to commence a Sit.
+                
+    4.2. We do not provide any of the following:
+                
+        4.2.1. Criminal Background Checks or Verification Checks on Sitters or Pet Owners/Home Owners.
+                
+        4.2.2. validation of Criminal Background Checks or Verification Checks on;
+                
+        4.2.3. employment of any Sitters;
+                
+        4.2.4. checking the validity of Sitter References;
+                
+        4.2.5. endorsement of the quality or performance of Sitters;
+                
+        4.2.6. endorsement of or checking the accuracy of the Pet Parent’s Home conditions;
+                
+        4.2.7. endorsement of any Reviews provided by Members;
+                
+                
+5. REQUIREMENTS OF PET PARENTS AND SITTERS
+                
+     5.1. The following applies to all Members. You will:
+                
+                5.1.1. be an individual who is at least 18 years old;
+                
+                5.1.2. pay the full amount for the booking on time;
+                
+                5.1.3. comply at all times in full with these Terms of Service;
+                
+                5.1.4. not create a fake identity or impersonate anyone else;
+                
+                5.1.5. complete a pre sit Handover and a post sit Handover;
+                
+                5.1.6. only cancel a Sit (or complete a Sit early) if there are extraordinary circumstances and you will immediately notify the Pet Parent or Sitter (as applicable) of this. 
+                
+                5.2. The following applies only to Pet Parents. You will:
+                
+                5.2.1 be responsible for vaccinating your own pet(s) and notify your Sitter should your pet(s) have any illnesses or ailments;
+                
+                5.2.2. ensure you have adequate provisions in place for veterinary care of your pet (such as pet insurance); and you hereby authorise the Sitter to obtain veterinary care for your pet(s) during a Sit if you cannot be reached;
+                
+                5.2.3. remain responsible at all times for any veterinary treatment that your pet(s) may require, including all costs and expenses incurred by the Sitter in relation to the same; and you will reimburse the Sitter for any such costs within 14 days of completion of a Sit;
+                
+                5.2.4. ensure that no pets to be left under the care of a Sitter have ever caused a person or animal any physical harm (no matter how minor the injury);
+                
+                5.2.5. notify a Sitter of any special requirements or behaviours relating to your pet(s) in your Home Listing and when you communicate with any Sitter during the Handover;
+                
+                5.2.6. ensure that you have adequate home insurance and that this insurance also covers you for the occupancy of a Sitter in your home (you may need to check this with your insurance provider);
+                
+                5.2.7. not have any pets which aren’t explicitly listed in the details of the booking request;
+                
+                5.2.8. give sitters prior notice of any weapon that will be present in your premises during a sit. All weapons that are present at your premises must be properly stored and secured and where possible, out of sight. All weapons present must be secured regardless of whether they’ve been disclosed.
+                
+                5.3. The following applies only to Sitters. You will:
+                
+                5.3.1. abide by all of the Pet Parents requests or instructions that are stipulated in booking information;
+                
+                5.3.2. contact the Pet Parent if the pet(s) requires veterinary care;
+                
+                5.3.3. get approval to take the pet(s) to the vet for treatment and get the Pet Parent’s agreement to pay for any costs incurred. 
+                
+                5.3.4. immediately contact the Pet Parent in the event of any damage to property and get their approval for repair. If, in the event of an emergency, you are unable to contact the Pet Parent, you will pay for the repair of any damage caused, and request the Pet Parent reimburse you for all costs incurred (provided you have not caused the damage yourself);
+                
+                5.3.5. not leave any Sit early under any circumstances, especially where this results in any pet(s) being left unattended, without first informing the Pet Parent and giving them reasonable time to arrange alternative pet care. 
+                
+                5.3.6. before arranging a Sit, have suitable insurance in place that will cover you for any medical expenses;
+                
+                5.3.7. not allow any other person(s) to participate in the sit unless they have been approved in writing by the Pet Parent;
+                
+                5.3.8. ensure that pets will remain at the Pet Parent’s property overnight, and will not be taken away from the house without prior approval from the Pet Parent; and
+                
+                5.3.9. provide notice of and obtain consent from a Pet Parent for any secured weapons that you intend to be on your person or in your possession while attending a housesit, prior to booking.
+                
+                
+                6. CONSEQUENCES OF NOT COMPLYING WITH REQUIREMENTS FOR MEMBERS
+                
+                6.1. If a Member does not comply with the Requirements of Pet Parents and Sitters (set out in clause 5) the following shall apply. We may:
+                
+                6.1.1. issue you with a warning;
+                
+                6.1.2. permanently block your access to the Services;
+                
+                6.1.3. report any offences committed to the appropriate authority;
+                
+                6.2. The application of these sanctions is entirely at our discretion and we can choose whether to apply any one or all of them at any time.
+                
+                
+                7. DISPUTES BETWEEN MEMBERS
+                
+                7.1. We will help Members resolve disputes only where possible 
+                
+                
+                8. WE DO NOT ACCEPT ANY LIABILITY OR RESPONSIBILITY FOR THE FOLLOWING:
+                
+                8.1. any loss of income or loss of savings you may suffer or extra costs you incur arising from a Sit or the performance/non-performance of a Sit;
+                
+                8.2. anything related to the services we make clear we do not provide as set out in clause 4;
+                
+                
+                9. You assume full responsibility for the choices you make before, during and after a Sit. You agree that as part of a Sit you enter into a contract between yourself and a Pet Parent or Sitter (as set out in clause 1.4 above) and you assume all of the associated risks of a Sit, including  the following and the risks that could arise from the following:
+                
+                9.1. evaluating and determining the suitability of a Pet Parent or Sitter for a Sit and assessing whether to arrange a Sit;
+                
+                9.2. health risks, especially to your pet(s), such as illness, bodily injury, disability, or death;
+                
+                9.3. property risks such as theft, damage, loss or destruction of your home, its contents and your other belongings;
+                
+                9.4. the Verification Check and Criminal Background Check as these are carried out by Sitters themselves;
+                
+                9.5. the care and supervision of any minors;
+                
+                9.6. the care and supervision of any pets;
+                
+                9.7. any travel and subsistence costs; or
+                
+                9.8. the information you share with other members;
+                
+                9.9. invasion of privacy (e.g. by use of CCTV or monitoring equipment).
+                
+                and you hereby agree that we have no liability to you in respect of any of these risks.
+            </textarea>
+            <br/>
+             <!-- Checkbox for Terms and Conditions -->
+            <div class="input-box">
+                <span class="terms">Terms and Conditions</span><br>
+
+                <input type="checkbox" id="terms-conditions" name="terms-conditions" value="terms-conditions">
+                <label for="terms-conditions">I accept these Terms and Conditions
+                </label><br>
+          </div>
+
+            <!-- Submit button -->
+        <button>Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+
+</body>
+</html>

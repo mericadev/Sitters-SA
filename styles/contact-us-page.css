@@ -1,0 +1,40 @@
+:root{
+  --primary-chef-blue: #4A90E2;
+    --deep-blue:rgb(21, 72, 129);
+    --secondary-slate-blue: #6C63FF;
+    --tertiary-sky-blue: #55c0d8;
+    --background-azure: #E4F9FF;
+}
+main{
+  min-width: 515px;
+}
+.page-title {
+    background-image: url(/images/undraw_welcoming_re_x0qo.svg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .say-hello-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .details-section {
+    background-color: var(--background-azure);
+    padding: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .details-section > div {
+    margin-bottom: 2rem;
+  }
+
+ 

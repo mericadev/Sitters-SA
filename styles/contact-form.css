@@ -1,0 +1,96 @@
+.page-title {
+    background-image: url(/images/dog-walking-64.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+  }
+main {
+    max-width: 90vw;
+    margin: 0 auto;
+    min-width: 450px;
+    width: 837px;
+    h2 {
+        font-size: 2em;
+        line-height: 1.2em;
+        text-align: center;
+    }
+    .sitter-form {
+        background: #E4F9FF;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-top: 2rem;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 1.5em;
+        border-bottom: 1px solid grey;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    .input-box {
+        span {
+            font-weight: 700;
+        }
+        input {
+            margin: .5rem;
+            border: none;
+            border-radius: 6px;
+            padding: .25rem 1rem .25rem 1rem;
+        }
+        ::placeholder {
+            font-family: "PT Sans", sans-serif;
+            font-size: .9em;
+            letter-spacing: .1em;
+            opacity: 1; /* Firefox */
+            font-weight: 500;
+          }
+    }
+    .user-details, .user-services, .user-rates {
+        border-bottom: 1px solid grey;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    .disclaimer {
+        p {
+            font-weight: 500;
+            margin-bottom: -1rem;
+        }
+        .disclaimer-text {
+            font-family: "PT Sans", sans-serif;
+        }
+    }
+    button {
+        margin-top: 1rem;
+        width: 150px;
+        border: none;
+        border-radius: 6px;
+        padding: .5rem 0 .5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 200px;
+        text-align: center;
+        padding: .8rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 6px;
+        background-color: #FF6584;
+        color: var(--background-azure);
+        box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.7);
+        font-weight: 900 !important;
+        &:hover {
+          background-color: var(--secondary-slate-blue);
+          color: var(--background-white);
+          transition: .2s ease-in-out;
+          cursor: pointer;
+         }
+    }
+    label {
+        font-family: "PT Sans", sans-serif;
+    }
+}
+
+
+

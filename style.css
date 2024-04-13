@@ -1,0 +1,356 @@
+    /*ROOT STYLES*/
+  :root {
+    --primary-chef-blue: #4A90E2;
+    --deep-blue:rgb(21, 72, 129);
+    --secondary-slate-blue: #6C63FF;
+    --tertiary-sky-blue: #55c0d8;
+    --accent-pink: #FF6584 ;
+    --background-azure: #E4F9FF;
+    --background-white:  #FFFFFF;
+    --black: #0000;
+  }
+  /*CSS RESET*/
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    * {
+      margin: 0;
+    }
+    body {
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+    input, button, textarea, select {
+      font: inherit;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+      overflow-wrap: break-word;
+    }
+    #root, #__next {
+      isolation: isolate;
+    }
+    /*GENERAL STYLES*/
+  body {
+    overflow-x: hidden;
+    min-width: 525px;
+    color: var(--deep-blue);
+  }
+  h1, h2, h3, button {
+    font-family: "PT Sans", sans-serif;
+  }
+  p, span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.06em;
+  }
+  .hero-section {
+    margin: 0 auto;
+    max-width: 80vw;
+    min-height: 60vh;
+  }
+  .flex-group {
+    display: flex;
+  }
+  .header-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-left {
+    width: 500px;
+    line-height: 2.8em;
+    h1, p, button {
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 3em;
+      color: var(--deep-blue);
+    }
+    p {
+      font-weight: 500;
+      line-height: 1.5em;
+      
+      color: var(--deep-blue);
+    }
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      padding: .8rem;
+      font-weight: 900;
+      
+    }
+  }
+  .our-services {
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 2rem;
+    }
+    .image-sections {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem;
+      img {
+        height: 400px;
+        width: 400px;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.2);
+        &:hover {
+          opacity: .7;
+          transition: .2s ease-in-out;
+        }
+      }
+     h3 {
+      margin-bottom: 1rem;
+      font-size: 2em;
+     }
+     p {
+      font-weight: 500;
+      width: 80%;
+      font-size: 1.2em;
+      line-height: 1.2em;
+     }
+     h3, p {
+      text-align: left;
+     }
+    }
+  }
+
+  .why-us{
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   .image{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    img {
+      width: 450px;
+      height: 450px;
+      border-radius: 6px;
+     }
+   } 
+   p {
+    margin-bottom: 2rem;
+    max-width: 450px;
+    line-height: 1.5em;
+   }
+   button{
+    width: 200px;
+    padding: .8rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #FF6584;
+    color: var(--background-azure);
+    box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.3);
+    font-weight: 900;
+    font-size: 1.2em;
+   &:hover {
+    background-color: var(--secondary-slate-blue);
+    color: var(--background-white);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+   }
+   }
+  }
+
+  .offers-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+    }
+   img {
+    width: 200px;
+    height: 200px;
+   }
+   .search, .book, .relax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+   }
+   h3 {
+    font-size: 2em;
+   }
+   p {
+    margin-bottom: 4rem;
+    font-weight: 500;
+   }
+   .book {
+    h3 {
+      margin-top: 1rem;
+    }
+   }
+  }
+
+  .reviews-section {
+    h1 {
+      text-align: center;
+      font-size: 3em; 
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+      line-height: 1em;
+    }
+   p {
+    height: 350px;
+    width: 350px;
+   }
+   .reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+    background-color: var(--background-azure);
+    .client-img {
+      max-width: 100%;
+      height: auto;
+      width: 350px;
+      height: 350px;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.2);
+    }
+    .review-2 {
+      margin-top: -4rem;
+     p {
+      margin-bottom: -4rem;
+     }
+    }
+    .quotation {
+      margin-left: 8rem;
+      width: 50px;
+      margin-bottom: 1rem;
+     }
+     p {
+      line-height: 1.2em;
+     }
+     span {
+      font-weight: 700;
+     }
+   }
+  }
+  .get-in-touch {
+    background-image: url(/images/pet-sitters-sa-sitting-with-pet.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    button {
+      width: 200px;
+      text-align: center;
+      padding: .8rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #FF6584;
+      color: var(--background-azure);
+      box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.7);
+      font-weight: 900 !important;
+      &:hover {
+        background-color: var(--secondary-slate-blue);
+        color: var(--background-white);
+        transition: .2s ease-in-out;
+        cursor: pointer;
+       }
+    }
+    h1, p {
+      color: var(--background-white);
+    }
+    p {
+      max-width: 300px;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+   /*GENERAL STYLES END*/
+   /*DISPLAY STYLES*/
+.hero-section {
+  .hero-left button{
+   min-width: 300px;
+   background-color: #FF6584;
+   box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.3);
+   a {
+    color: var(--background-azure);
+    letter-spacing: .2rem;
+    text-decoration: none;
+    font-size: 1.2em;
+   }
+   &:hover {
+    background-color: var(--secondary-slate-blue);
+    color: var(--background-white);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+   }
+  }
+  .hero-right {
+    img {
+      width: 500px;
+    }
+  }
+  .hero-left p{
+    font-weight: 500;
+  }
+}
+/*RESPONSIVE STYLES*/
+@media (max-width: 640px){
+  .header-flex {
+    flex-wrap: wrap-reverse
+  }
+}
+@media (max-width: 716px){
+  .reviews-section {
+    p {
+      height: 200px;
+      width: 350px;
+     }
+}
+}
+@media (max-width: 720px){
+  .our-services {
+    .image-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      img {
+        width: 100%;
+        height: 400px;
+        min-width: 400px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 863px){
+  .hero-left button {
+    margin-bottom: 3rem;
+  }
+}
