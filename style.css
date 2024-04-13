@@ -41,6 +41,12 @@
     padding: 0;
     color: var(--deep-blue);
   }
+    .container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 2rem;
+}
+
   h1, h2, h3, button {
     font-family: "PT Sans", sans-serif;
   }
