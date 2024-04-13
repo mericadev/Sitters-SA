@@ -36,8 +36,12 @@
     /*GENERAL STYLES*/
   body {
     overflow-x: hidden;
-    min-width: 525px;
+    min-width: 489px;
     color: var(--deep-blue);
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
   h1, h2, h3, button {
     font-family: "PT Sans", sans-serif;
@@ -172,6 +176,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     h1 {
       text-align: center;
       font-size: 3em;
@@ -227,8 +233,8 @@
     .client-img {
       max-width: 100%;
       height: auto;
-      width: 350px;
-      height: 350px;
+      width: 320px;
+      height: 320px;
       border-radius: 10px;
       margin-bottom: 2rem;
       box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.2);
@@ -253,7 +259,7 @@
    }
   }
   .get-in-touch {
-    background-image: url(/images/pet-sitters-sa-sitting-with-pet.jpg);
+    background: url(/images/pet-sitters-sa-sitting-with-pet.jpg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -323,7 +329,12 @@
 /*RESPONSIVE STYLES*/
 @media (max-width: 640px){
   .header-flex {
-    flex-wrap: wrap-reverse
+    flex-wrap: wrap-reverse;
+  }
+  .offers-section {
+    p {
+      width: 300px;
+    }
   }
 }
 @media (max-width: 716px){
