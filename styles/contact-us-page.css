@@ -9,7 +9,7 @@ main{
   min-width: 515px;
 }
 .page-title {
-    background-image: url(/images/undraw_welcoming_re_x0qo.svg);
+    background-image: url(../images/undraw_welcoming_re_x0qo.svg);
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
