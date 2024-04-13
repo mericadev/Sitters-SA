@@ -36,7 +36,9 @@
     /*GENERAL STYLES*/
   body {
     overflow-x: hidden;
-    min-width: 525px;
+    min-width: 320px; 
+    margin: 0; 
+    padding: 0;
     color: var(--deep-blue);
   }
   h1, h2, h3, button {
