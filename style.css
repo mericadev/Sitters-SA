@@ -259,7 +259,7 @@
    }
   }
   .get-in-touch {
-    background: url(/images/pet-sitters-sa-sitting-with-pet.jpg);
+    background: url(../images/pet-sitters-sa-sitting-with-pet.jpg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;

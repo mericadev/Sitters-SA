@@ -18,10 +18,15 @@ main {
         text-align: center;
     }
     .sitter-form {
-        background: #E4F9FF;
+        background: rgb(97,208,233);
+        background: -moz-linear-gradient(90deg, rgba(97,208,233,1) 40%, rgba(108,99,255,1) 60%, rgba(97,208,233,1) 70%);
+        background: -webkit-linear-gradient(90deg, rgba(97,208,233,1) 40%, rgba(108,99,255,1) 60%, rgba(97,208,233,1) 70%);
+        background: linear-gradient(90deg, rgba(97,208,233,1) 40%, rgba(108,99,255,1) 60%, rgba(97,208,233,1) 70%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#61d0e9",endColorstr="#61d0e9",GradientType=1);
         padding: 1rem;
         border-radius: 6px;
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .title {
         font-weight: 600;
