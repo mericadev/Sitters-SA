@@ -135,7 +135,7 @@ headerTemplate.innerHTML = `
         <navbar>
         <nav class="nav-bar flex-group">
             <div class="logo">
-              <a href="index.html"><img src="../images/sitters-sa-logo.svg" width="40px" height="40px"></a>
+              <a href="index.html"><img src="..images/sitters-sa-logo.svg" width="40px" height="40px"></a>
             </div>
 
             <div class="side-bar">
