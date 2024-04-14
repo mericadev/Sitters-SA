@@ -9,7 +9,7 @@ headerTemplate.innerHTML = `
           z-index: 1000; /* Ensure it's on top of other elements */
           top: 3%;
           padding: 1rem;
-          
+          min-width: 320px;
         }
 
         .side-bar {
@@ -18,7 +18,7 @@ headerTemplate.innerHTML = `
           top: 2%;
           right: 0;
           height: 100vh;
-          width: 400px;
+          width: 80%;
           z-index: 999;
           background-color: hsla(0, 0%, 100%, 0);
           box-shadow: -10px 0 10px hsla(0, 0%, 0%, 0.2);
@@ -111,10 +111,6 @@ headerTemplate.innerHTML = `
             transition: .1s ease-in;
         }
         
-
-
-
-
           @keyframes stickyNav {
             100% {
               background-color: hsla(0, 0%, 100%, 0);

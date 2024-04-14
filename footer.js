@@ -5,6 +5,7 @@ footerTemplate.innerHTML = `
  footer {
     min-height: 20vh;
     max-width: 1200px;
+    min-width: 320px;
     margin: 0 auto;
     background-color: #E4F9FF;
     ul {

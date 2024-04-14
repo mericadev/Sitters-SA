@@ -16,6 +16,7 @@ main {
         font-size: 2em;
         line-height: 1.2em;
         text-align: center;
+        margin-bottom: 2rem;
     }
     .sitter-form {
         background: rgb(97,208,233);
@@ -81,6 +82,12 @@ main {
         .disclaimer-text {
             font-family: "PT Sans", sans-serif;
         }
+        #text-area {
+            overflow: auto; 
+            max-width: 100%; 
+            max-height: 500px; 
+        }
+        
     }
     button {
         margin-top: 1rem;
@@ -90,7 +97,6 @@ main {
         padding: .5rem 0 .5rem;
         font-weight: 600;
         text-transform: uppercase;
-        width: 200px;
         text-align: center;
         padding: .8rem;
         margin-top: 1rem;
