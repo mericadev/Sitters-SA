@@ -9,6 +9,7 @@
     --background-white:  #FFFFFF;
     --black: #0000;
   }
+   /*ROOT STYLES END*/
   /*CSS RESET*/
     *, *::before, *::after {
       box-sizing: border-box;
@@ -33,6 +34,7 @@
     #root, #__next {
       isolation: isolate;
     }
+    /*CSS RESET END*/
     /*GENERAL STYLES*/
   body {
     overflow-x: hidden;
@@ -168,7 +170,6 @@
    }
    }
   }
-
   .offers-section {
     display: flex;
     flex-direction: column;
@@ -382,3 +383,4 @@
     margin-bottom: 3rem;
   }
 }
+/*RESPONSIVE STYLES END*/
