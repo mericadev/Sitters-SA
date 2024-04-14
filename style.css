@@ -100,7 +100,7 @@
       display: flex;
       align-items: center;
       gap: 2rem;
-      padding: 4rem;
+      padding: 2rem;
       img {
         height: 400px;
         width: 400px;
@@ -132,7 +132,7 @@
   .why-us{
     max-width: 80vw;
     margin: 0 auto;
-    padding: 4%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
