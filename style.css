@@ -325,13 +325,13 @@
 @media screen and (max-width: 558px) {
  .container {
   h1 {
-    font-size: 2em !important;
-  }
-  h2 {
     font-size: 1.5em !important;
   }
+  h2 {
+    font-size: 1.3em !important;
+  }
   h3 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
  }
 }
