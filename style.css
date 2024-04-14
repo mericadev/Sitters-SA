@@ -36,7 +36,7 @@
     /*GENERAL STYLES*/
   body {
     overflow-x: hidden;
-    min-width: 489px;
+    min-width: 320px;
     color: var(--deep-blue);
   }
   .container {
