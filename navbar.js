@@ -20,7 +20,7 @@ headerTemplate.innerHTML = `
           height: 100vh;
           width: 80%;
           z-index: 999;
-          background-color: hsla(0, 0%, 100%, 0);
+          background-color: rgba(255, 255, 255, 0.8);
           box-shadow: -10px 0 10px hsla(0, 0%, 0%, 0.2);
           backdrop-filter: blur(10px);
           li {
@@ -35,6 +35,13 @@ headerTemplate.innerHTML = `
               border-radius: 50%;   
           }
       }
+      @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        .side-bar {
+            background-color: hsla(0, 0%, 100%, 0);
+            -webkit-backdrop-filter: blur(10px); /* Safari prefix */
+            backdrop-filter: blur(10px);
+        }
+    }
 
       .side-bar .dropdown-menu li a {
         color: var(--primary-chef-blue);
