@@ -356,6 +356,7 @@
 @media (max-width: 720px){
   .header-flex {
     flex-wrap: wrap-reverse;
+    margin-top: -3rem;
 
   .hero-left {
     width: 100%;
