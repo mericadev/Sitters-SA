@@ -68,9 +68,9 @@
   }
   .hero-left {
     width: 50%;
-    line-height: 2.8em;
-    h1, p, button {
-      margin-bottom: 2rem;
+    line-height: 2.2em;
+    h1, p{
+      margin-bottom: 1.5rem;
     }
     h1 {
       font-size: 3em;
@@ -84,7 +84,7 @@
     button {
       border: none;
       border-radius: 6px;
-      padding: .8rem;
+      padding: 1rem;
       font-weight: 900;
     }
   }
@@ -93,6 +93,7 @@
       text-align: center;
       font-size: 3em;
       margin-bottom: 2rem;
+      margin-top: -1rem;
     }
     .image-sections {
       display: flex;
@@ -103,7 +104,7 @@
         width: 100%;
         height: 350px;
         border-radius: 6px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
         box-shadow: 0 0 0.75rem hsla(0, 0%, 0%, 0.2);
         &:hover {
           opacity: .7;
@@ -118,7 +119,7 @@
       font-weight: 500;
       width: 80%;
       font-size: 1.2em;
-      line-height: 1.2em;
+      line-height: 1.5em;
      }
      h3, p {
       text-align: left;
@@ -180,7 +181,7 @@
       text-align: center;
       font-size: 3em;
       margin-bottom: 2rem;
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
    img {
     width: 200px;
@@ -197,7 +198,7 @@
     font-size: 2em;
    }
    p {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-weight: 500;
    }
    .book {
@@ -212,8 +213,7 @@
     h1 {
       text-align: center;
       font-size: 3em; 
-      margin-bottom: 4rem;
-      margin-top: 4rem;
+      margin-bottom: 3rem;
       line-height: 1em;
     }
    p {

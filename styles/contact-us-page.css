@@ -12,7 +12,7 @@ main{
     background-image: url(../images/undraw_welcoming_re_x0qo.svg);
     min-height: 100vh;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -25,8 +25,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .details-section {

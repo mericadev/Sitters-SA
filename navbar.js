@@ -11,7 +11,6 @@ headerTemplate.innerHTML = `
           padding: 1rem;
           min-width: 320px;
         }
-
         .side-bar {
           display: none;
           position: fixed;
@@ -42,17 +41,15 @@ headerTemplate.innerHTML = `
             backdrop-filter: blur(10px);
         }
     }
-
       .side-bar .dropdown-menu li a {
         color: var(--primary-chef-blue);
         font-family: "PT Sans", sans-serif;
+        margin-bottom: -1rem;
         &:hover {
           color: var(--deep-blue); 
-          margin-bottom: .8rem;
           transition: .1s ease-in;
         }
       }
-      
         .nav-bar {
             --_animationStartsAfter: 50px;
             --animationDistance: 5px;
@@ -63,7 +60,6 @@ headerTemplate.innerHTML = `
             min-height: 10vh;
             max-width: 1200px;
             margin: 0 auto;
-            margin-bottom: 4rem;
             background-color: var( --background-azure);
             animation: stickyNav linear forwards;
             animation-timeline: view();
@@ -133,7 +129,11 @@ headerTemplate.innerHTML = `
             display: none;
           }
          }
-          
+         @media (min-width: 720px){
+          .nav-bar {
+            margin-bottom: 3rem;
+          }
+         }
         </style>
         
         <header>

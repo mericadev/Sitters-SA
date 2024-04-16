@@ -16,7 +16,7 @@ main {
         font-size: 2em;
         line-height: 1.2em;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 4.4rem;
     }
     .sitter-form {
         background: rgb(97,208,233);
@@ -37,6 +37,7 @@ main {
         margin-bottom: 1rem;
     }
     .input-box {
+        margin-bottom: 1.5rem;
         span {
             font-weight: 700;
         }
@@ -68,6 +69,7 @@ main {
             height: 22px;
             vertical-align: middle;
           }
+          
     }
     .user-details, .user-services, .user-rates {
         border-bottom: 1px solid grey;
@@ -77,7 +79,6 @@ main {
     .disclaimer {
         p {
             font-weight: 500;
-            margin-bottom: -1rem;
         }
         .disclaimer-text {
             font-family: "PT Sans", sans-serif;
@@ -90,7 +91,6 @@ main {
         
     }
     button {
-        margin-top: 1rem;
         width: 150px;
         border: none;
         border-radius: 6px;
@@ -98,8 +98,7 @@ main {
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;
-        padding: .8rem;
-        margin-top: 1rem;
+        padding: 1rem;
         border: none;
         border-radius: 6px;
         background-color: #FF6584;
