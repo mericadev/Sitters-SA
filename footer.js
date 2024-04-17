@@ -52,13 +52,13 @@ footerTemplate.innerHTML = `
         </div>
         <div class="info">
             <ul class="flex-group">
-                <li><a href="#">info@Island.com</a></li>
-                <li class="number"><a href="#">+123456789</a></li>
-                <li><a href="#">Seesreasse 21, Zurich</a></li>
+                <li><a href="#">info@sitterssa.co.za</a></li>
+                <li class="number"><a href="#">0716031181</a></li>
+                <li><a href="#">327 Theuns van Niekerk Street Wierdapark, Centurion</a></li>
             </ul>
         </div>
         <div class="copy-right">
-            <p>2023 Island. All rights reserved.</p>
+            <p>2024 Sitters SA. All rights reserved.</p>
         </div>
     </footer>
 `;
