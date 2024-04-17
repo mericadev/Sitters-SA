@@ -55,6 +55,15 @@
     line-height: 1.2em;
     letter-spacing: 0.06em;
   }
+  button {
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    font-weight: 900;
+    color: var(--background-azure);
+  font-weight: 900;
+  font-size: 1.2em;
+  }
   .hero-section {
     margin: 0 auto;
     padding: 2rem;
@@ -81,12 +90,7 @@
       line-height: 1.5em;
       color: var(--deep-blue);
     }
-    button {
-      border: none;
-      border-radius: 6px;
-      padding: 1rem;
-      font-weight: 900;
-    }
+    
   }
   .our-services {
     h1 {
@@ -94,6 +98,7 @@
       font-size: 3em;
       margin-bottom: 2rem;
       margin-top: -1rem;
+      
     }
     .image-sections {
       display: flex;
