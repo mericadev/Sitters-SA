@@ -55,11 +55,12 @@ headerTemplate.innerHTML = `
             --animationDistance: 5px;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             border-radius: 10px;
             min-height: 10vh;
             max-width: 1200px;
             margin: 0 auto;
+            padding-left: 2rem;
             background-color: var( --background-azure);
             animation: stickyNav linear forwards;
             animation-timeline: view();
